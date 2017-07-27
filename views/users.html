@@ -1,0 +1,10 @@
+<% include layout/header.html %>
+
+<h1>Users</h1>
+<ul id="users">
+  <% users.forEach(function(user){ %>
+    <li><%= user.first_name %> &lt;<%= user.email %>&gt;</li>
+  <% }) %>
+</ul>
+<% include register.html %>
+<% include layout/footer.html %>

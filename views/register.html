@@ -1,0 +1,34 @@
+ <% include layout/header.html %>
+    <!-- Sign FORM -->
+
+    <h1>Sign Up</h1>
+    <form action="/user" method="post">
+        <div class="form-group">
+            <label>Firstname</label>
+            <input type="text" class="form-control" name="first_name" id="firstname">
+        </div>
+        <div class="form-group">
+            <label>Lastname</label>
+            <input type="text" class="form-control" name="last_name" id="lastname">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="text" class="form-control" name="password" id="password">
+        </div>
+        <!--<div class="form-group">
+            <label>Repeat Password</label>
+            <input type="text" class="form-control" name="repeat_password" id="repeat_password">
+        </div>-->
+         <input type="submit" class="btn btn-warning btn-lg" value="Signup" />
+   
+    <p>Already have an account? <a href="/login">Login</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+<% include layout/footer.html %>
+
+ 
+ 
